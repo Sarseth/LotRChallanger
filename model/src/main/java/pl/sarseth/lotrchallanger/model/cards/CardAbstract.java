@@ -16,6 +16,8 @@ public abstract class CardAbstract {
 
     private String text;
 
+    private String imagePath;
+
     public DeckType getDeckType() {
         return deckType;
     }
@@ -56,6 +58,14 @@ public abstract class CardAbstract {
         this.text = text;
     }
 
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -69,12 +79,13 @@ public abstract class CardAbstract {
                 deckType == that.deckType &&
                 Objects.equals(name, that.name) &&
                 Objects.equals(flavorText, that.flavorText) &&
-                Objects.equals(text, that.text);
+                Objects.equals(text, that.text) &&
+                Objects.equals(imagePath, that.imagePath);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(deckType, name, unique, flavorText, text);
+        return Objects.hash(deckType, name, unique, flavorText, text, imagePath);
     }
 }
