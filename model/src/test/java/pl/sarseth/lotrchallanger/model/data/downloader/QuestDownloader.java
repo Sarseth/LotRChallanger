@@ -3,6 +3,7 @@ package pl.sarseth.lotrchallanger.model.data.downloader;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class QuestDownloader extends JsonDownloader {
@@ -19,7 +20,9 @@ public class QuestDownloader extends JsonDownloader {
             ((JSONObject) o).remove("ScenarioCards");
             ((JSONObject) o).remove("QuestCards");
         }
-        System.out.println(questJson.toString());
+        //try (FileWriter file = new FileWriter(System.getProperty("user.dir") + "/model/src/main/resources/data/Scenarios.json")) {
+        //    file.write(questJson.toString(2));
+        //}
     }
 
 }

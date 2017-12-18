@@ -1,0 +1,45 @@
+LOTR Challanges
+
+1. Normal quest
+2. Quest with cards available till this pack (release helper)
+3. Same as before but plus hero from this pack (at least one)
+4. Random spheres
+5. Random heroes
+6. Random trait themed deck
+7. Random 9 cards
+8. Nightmare challange
+
+
+
+Features:
+
+0. Accounts
+1. Score multiplayers for those challanges
+2. Highscores (optionally, verified only as for OCTGN log or nice photo/text relation or YT link)
+3. Deck links
+4. Buildin deck manager
+5. OCTGN log
+6. Photos (+ blog? )
+7. Card list
+8. OCTGN log validator
+9. Packs available to player choice
+10. Comments
+11. Raport of bad randomization (need check from admin if it's valid [Like 3 Dwarfs heroes and attachment for only dwarf heroes while soloing])
+12. Parties (not only solo play challanges)
+13. OCTGN lobby? 
+14. Daily challanges (for those with everything [delayed new packs])
+
+
+Technology:
+
+Java 1.8
+Spring
+
+
+Sources:
+http://hallofbeorn.com/LotR?
+http://ringsdb.com
+http://hallofbeorn.com/Export/QuestCards
+http://hallofbeorn.com/Export/PlayerCards
+http://hallofbeorn.com/Export/Scenarios
+http://hallofbeorn.com/Export/EncounterCards
