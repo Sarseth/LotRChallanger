@@ -1,7 +1,7 @@
-package pl.sarseth.lotrchallanger.model.cards;
+package pl.sarseth.lotrchallanger.model.game.cards;
 
-import pl.sarseth.lotrchallanger.model.cards.types.PlayerCardType;
-import pl.sarseth.lotrchallanger.model.cards.types.Sphere;
+import pl.sarseth.lotrchallanger.model.game.cards.types.PlayerCardType;
+import pl.sarseth.lotrchallanger.model.game.cards.types.Sphere;
 
 import java.util.Objects;
 

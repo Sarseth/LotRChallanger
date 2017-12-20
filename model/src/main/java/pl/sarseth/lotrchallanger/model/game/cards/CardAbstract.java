@@ -1,6 +1,6 @@
-package pl.sarseth.lotrchallanger.model.cards;
+package pl.sarseth.lotrchallanger.model.game.cards;
 
-import pl.sarseth.lotrchallanger.model.cards.types.DeckType;
+import pl.sarseth.lotrchallanger.model.game.cards.types.DeckType;
 
 import java.util.Objects;
 

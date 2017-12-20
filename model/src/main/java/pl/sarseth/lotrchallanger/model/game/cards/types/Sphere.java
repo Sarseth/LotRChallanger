@@ -1,4 +1,4 @@
-package pl.sarseth.lotrchallanger.model.cards.types;
+package pl.sarseth.lotrchallanger.model.game.cards.types;
 
 public enum Sphere {
 
