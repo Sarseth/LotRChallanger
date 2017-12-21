@@ -12,7 +12,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.time.Month;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
@@ -26,23 +25,19 @@ public class ScenarioCsvReader {
 
     private static String DELIMETER = ";";
 
-    public static void main(String... args) {
-        System.out.println(new ScenarioCsvReader().loadScenarios());
-    }
-
-    private List<Scenario> loadScenarios() {
-        List<Scenario> scenarioList = readScenariosFromCsv();
+    public List<Scenario> loadScenarios(String customLocation) {
+        List<Scenario> scenarioList = readScenariosFromCsv(customLocation);
 
         correctScenarioList(scenarioList);
 
         return scenarioList;
     }
 
-    private List<Scenario> readScenariosFromCsv() {
+    private List<Scenario> readScenariosFromCsv(String customLocation) {
         List<Scenario> scenarioList = Collections.emptyList();
 
         try {
-            File fileToRead = new File(FILE_LOCATION);
+            File fileToRead = new File(StringUtils.defaultIfBlank(customLocation, FILE_LOCATION));
             InputStream inputStream = new FileInputStream(fileToRead);
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 
@@ -95,7 +90,7 @@ public class ScenarioCsvReader {
 
         String[] args = line.split(DELIMETER, -1);
 
-        if(args.length < 8){
+        if (args.length < 8) {
             System.out.println(args);
         }
 
