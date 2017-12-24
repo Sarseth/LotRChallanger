@@ -1,8 +1,8 @@
-package pl.sarseth.lotrchallanger.model.data.game.readers;
+package pl.sarseth.lotrchallanger.repository.readers;
 
 import org.junit.Test;
-import pl.sarseth.lotrchallanger.model.game.readers.ScenarioCsvReader;
 import pl.sarseth.lotrchallanger.model.game.scenario.Scenario;
+import pl.sarseth.lotrchallanger.repository.data.readers.ScenarioCsvReader;
 
 import java.util.List;
 

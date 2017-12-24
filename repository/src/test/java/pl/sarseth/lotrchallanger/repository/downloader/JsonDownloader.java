@@ -1,4 +1,4 @@
-package pl.sarseth.lotrchallanger.model.data.downloader;
+package pl.sarseth.lotrchallanger.repository.downloader;
 
 import org.json.JSONArray;
 

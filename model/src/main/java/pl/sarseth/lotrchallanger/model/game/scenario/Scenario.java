@@ -2,7 +2,9 @@ package pl.sarseth.lotrchallanger.model.game.scenario;
 
 import java.util.Objects;
 
-public class Scenario {
+public class Scenario implements Comparable {
+
+    private int id;
 
     private Integer yearOfRelease;
 
@@ -21,6 +23,14 @@ public class Scenario {
     private Scenario nightmareDeck;
 
     private boolean released;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public Integer getYearOfRelease() {
         return yearOfRelease;
@@ -103,7 +113,8 @@ public class Scenario {
             return false;
         }
         Scenario scenario = (Scenario) o;
-        return released == scenario.released &&
+        return id == scenario.id &&
+                released == scenario.released &&
                 Objects.equals(yearOfRelease, scenario.yearOfRelease) &&
                 Objects.equals(monthOfRelease, scenario.monthOfRelease) &&
                 Objects.equals(code, scenario.code) &&
@@ -116,13 +127,14 @@ public class Scenario {
 
     @Override
     public int hashCode() {
-        return Objects.hash(yearOfRelease, monthOfRelease, code, name, cycle, officialDifficulty, type, nightmareDeck, released);
+        return Objects.hash(id, yearOfRelease, monthOfRelease, code, name, cycle, officialDifficulty, type, nightmareDeck, released);
     }
 
     @Override
     public String toString() {
         return "Scenario{" +
-                "yearOfRelease=" + yearOfRelease +
+                "id=" + id +
+                ", yearOfRelease=" + yearOfRelease +
                 ", monthOfRelease=" + monthOfRelease +
                 ", code='" + code + '\'' +
                 ", name='" + name + '\'' +
@@ -132,5 +144,22 @@ public class Scenario {
                 ", nightmareDeck=" + nightmareDeck +
                 ", released=" + released +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        if (o == null) {
+            return 1;
+        }
+        Scenario scenario2 = (Scenario) o;
+        int resultOfCode = code.compareTo(scenario2.getCode());
+        if (resultOfCode == 0) {
+            if (id > scenario2.getId()) {
+                return 1;
+            } else if (id < scenario2.getId()) {
+                return -1;
+            }
+        }
+        return resultOfCode;
     }
 }

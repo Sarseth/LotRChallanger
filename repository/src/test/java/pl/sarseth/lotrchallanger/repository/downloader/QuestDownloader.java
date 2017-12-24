@@ -1,9 +1,8 @@
-package pl.sarseth.lotrchallanger.model.data.downloader;
+package pl.sarseth.lotrchallanger.repository.downloader;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.FileWriter;
 import java.io.IOException;
 
 public class QuestDownloader extends JsonDownloader {

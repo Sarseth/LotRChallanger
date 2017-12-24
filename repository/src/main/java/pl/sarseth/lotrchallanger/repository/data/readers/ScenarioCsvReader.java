@@ -1,4 +1,4 @@
-package pl.sarseth.lotrchallanger.model.game.readers;
+package pl.sarseth.lotrchallanger.repository.data.readers;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -52,7 +52,7 @@ public class ScenarioCsvReader {
 
     private void correctScenarioList(List<Scenario> scenarioList) {
         int size = scenarioList.size();
-        for (int i = 1; i < size; i++) {
+        for (int i = 1; i < size; i++) { // The first row is a title for Core Set box, we can start from i = 1
             Scenario currentScenario = scenarioList.get(i);
             Scenario previousScenario = scenarioList.get(i - 1);
             correctCurrentScenario(currentScenario, previousScenario);
@@ -60,6 +60,7 @@ public class ScenarioCsvReader {
                 scenarioList.remove(--i);
                 size = scenarioList.size();
             }
+            currentScenario.setId(i);
         }
     }
 
