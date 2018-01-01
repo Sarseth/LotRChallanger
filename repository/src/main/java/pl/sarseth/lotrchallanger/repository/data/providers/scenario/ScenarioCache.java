@@ -11,8 +11,8 @@ public class ScenarioCache {
 
     private ScenarioCsvReader scenarioCsvReader;
 
-    //TODO: PostConstruct
-    void loadAndCacheData() {
+    public ScenarioCache() {
+        scenarioCsvReader = new ScenarioCsvReader();
         cachedScenarioList = scenarioCsvReader.loadScenarios(null);
     }
 
