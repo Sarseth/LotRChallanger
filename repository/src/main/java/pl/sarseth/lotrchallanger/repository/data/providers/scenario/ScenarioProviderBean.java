@@ -1,8 +1,7 @@
 package pl.sarseth.lotrchallanger.repository.data.providers.scenario;
 
 import org.apache.commons.collections4.CollectionUtils;
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pl.sarseth.lotrchallanger.model.game.scenario.Scenario;
 
@@ -11,23 +10,21 @@ import java.util.List;
 import java.util.Random;
 
 @Service
-public class ScenarioProviderBean implements ScenarioProvider {
+public class ScenarioProviderBean {
 
-    private ScenarioCache scenarioCache = new ScenarioCache(); // TODO: do to
+    @Autowired
+    private ScenarioCache scenarioCache;
 
-    @Override
     public List<Scenario> findAllScenarios() {
         return new ArrayList<>(scenarioCache.getCachedScenarioList());
     }
 
-    @Override
     public Scenario findRandomScenario() {
         List<Scenario> scenarioList = scenarioCache.getCachedScenarioList();
         int randomNumber = new Random().nextInt(scenarioList.size());
         return scenarioList.get(randomNumber);
     }
 
-    @Override
     public List<Scenario> findScenarioList(ScenarioSearchParams scenarioSearchParams) {
         List<Scenario> chosenScenarios = new ArrayList<>(scenarioCache.getCachedScenarioList());
 

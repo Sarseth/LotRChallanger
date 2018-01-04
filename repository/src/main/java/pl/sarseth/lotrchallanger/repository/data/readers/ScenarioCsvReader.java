@@ -21,7 +21,7 @@ public class ScenarioCsvReader {
 
     private static Logger LOG = LogManager.getLogger(ScenarioCsvReader.class);
 
-    private static String FILE_LOCATION = System.getProperty("user.dir") + "/model/src/main/resources/data/Scenarios.csv";
+    private static String FILE_LOCATION = System.getProperty("user.dir") + "/repository/src/main/resources/data/Scenarios.csv";
 
     private static String DELIMETER = ";";
 
