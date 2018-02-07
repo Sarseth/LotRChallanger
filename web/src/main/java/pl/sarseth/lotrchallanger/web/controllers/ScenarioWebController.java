@@ -22,11 +22,15 @@ public class ScenarioWebController {
     @Autowired
     private ScenarioProviderBean scenarioProvider;
 
-    @RequestMapping("/")
+    @RequestMapping("/scenarios")
     @ResponseBody
     String test() {
         List<Scenario> allScenarios = scenarioProvider.findAllScenarios();
-        return "It's working RICK!";
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Scenario scenario : allScenarios) {
+            stringBuilder.append("<td>" + scenario.getName() + "</br></td>");
+        }
+        return stringBuilder.toString();
     }
 
     public static void main(String... args) {
