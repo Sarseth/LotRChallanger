@@ -19,12 +19,6 @@ public class ScenarioProviderBean {
         return new ArrayList<>(scenarioCache.getCachedScenarioList());
     }
 
-    public Scenario findRandomScenario() {
-        List<Scenario> scenarioList = scenarioCache.getCachedScenarioList();
-        int randomNumber = new Random().nextInt(scenarioList.size());
-        return scenarioList.get(randomNumber);
-    }
-
     public List<Scenario> findScenarioList(ScenarioSearchParams scenarioSearchParams) {
         List<Scenario> chosenScenarios = new ArrayList<>(scenarioCache.getCachedScenarioList());
 
