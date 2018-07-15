@@ -129,9 +129,9 @@
 ;;uMEN37;The Wastes of Eriador;Nightmare Deck;Angmar Awakens;-;20;Released;-
 ;;uMEN38;Escape from Mount Gram;Nightmare Deck;Angmar Awakens;-;20;Released;-
 ;;uMEN39;Across the Ettenmoors;Nightmare Deck;Angmar Awakens;-;20;Released;-
-;September;MEC51;The Drowned Ruins;Adventure Pack;Dream-chaser;6;60;Released;Unreleased
-;;MEC52;A Storm on Cobas Haven;Adventure Pack;Dream-chaser;7;60;Released;Unreleased
-;October;MEC53;The City of Corsairs;Adventure Pack;Dream-chaser;8;60;Released;Unreleased
+;September;MEC51;The Drowned Ruins;Adventure Pack;Dream-chaser;6;60;Released;uMEN48
+;;MEC52;A Storm on Cobas Haven;Adventure Pack;Dream-chaser;7;60;Released;uMEN49
+;October;MEC53;The City of Corsairs;Adventure Pack;Dream-chaser;8;60;Released;uMEN50
 ;November;MEC55;The Sands of Harad;Deluxe Expansion;The Sands of Harad;-;165;Released;Unreleased
 ;;;Escape from Umbar;;;5;;;
 ;;;Desert Crossing;;;6;;;
@@ -154,9 +154,15 @@
 ;;;The Black Gate;;;-;;;
 ;;;The Long Arm of Mordor;;;-;;;
 ;December;MEC60;The Dungeons of Cirith Gurat;Adventure Pack;Haradrim;?;60;Released;Unreleased
-;;MEC61;The Crossings of Poros;Adventure Pack;Haradrim;?;60;On the Boat;Unreleased
-2018;Q1;MEC65;The Wilds of Rhovanion;Deluxe Expansion;The Wilds of Rhovanion;-;156;In development;Unreleased
-;;;Journey up the Anduin;;;?;;;
-;;;Lost in Mirkwood;;;?;;;
-;;;The King's Quest;;;?;;;
-;;uMECxx;Assault on Dol Guldur;Print on Demand;Fellowship 2017;-;;Unreleased;-
+2018;February;MEC61;The Crossings of Poros;Adventure Pack;Haradrim;?;60;Released;Unreleased
+;;uMEC74;Attack on Dol Guldur;Print on Demand;Fellowship 2017;-;;Released;-
+;May;uMEN48;The Drowned Ruins;Nightmare Deck;Dream-chaser;-;20;Released;-
+;;uMEN49;A Storm on Cobas Haven;Nightmare Deck;Dream-chaser;-;20;Released;-
+;;uMEN50;The City of Corsairs;Nightmare Deck;Dream-chaser;-;20;Released;-
+;June;MEC65;The Wilds of Rhovanion;Deluxe Expansion;The Wilds of Rhovanion;-;156;Released;Unreleased
+;;;Journey up the Anduin;;;5;;;
+;;;Lost in Mirkwood;;;5;;;
+;;;The King's Quest;;;5;;;
+;Q3;MEC66;The Withered Heath;Adventure Pack;Ered Mithrin;?;60;In Development;Unreleased
+;;MEC67;Roam Across Rhovanion;Adventure Pack;Ered Mithrin;?;60;In Development;Unreleased
+;August;uMECxx;The Wizard's Quest;Print on Demand;GenCon 2018;-;?;In Development;-
